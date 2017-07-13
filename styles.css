@@ -2,9 +2,52 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-h1 {
-  font-weight: 300;
+header {
+  background-color: #3F3244;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  color: #F2F2F2;
+  /*padding: 15px 0px;*/
+}
 
+h1 {
+  margin: 0;
+  font-weight: 300;
+}
+
+span {
+  color: #34D1D1;
+}
+
+h2 {
+  margin: 0px;
+}
+
+h3 {
+  font-weight: 300;
+  border-bottom: 0.5px solid #666666;
+  padding-bottom: 20px;
+}
+
+.accordion {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-code {
+  border: none;
+  width: 280px;
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #3F3244;
+  font-weight: 300;
+  font-size: 14px;
+  color: #F2F2F2;
+  cursor: pointer;
 }
 
 /* Style the tab */
@@ -41,4 +84,96 @@ section.tab button.active {
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
+}
+
+.accordion-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 400px) {
+  /*styles for header at mobile*/
+  header {
+    background-color: #3F3244;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    color: #F2F2F2;
+  }
+
+  h1 {
+    margin: 0;
+    font-weight: 300;
+  }
+
+  span {
+    color: #34D1D1;
+  }
+
+  h2 {
+    border-top: 0.5px solid #666666;
+    padding-top: 20px;
+  }
+
+  h3 {
+    font-weight: 300;
+    border-bottom: 0.5px solid #666666;
+    padding-bottom: 20px;
+  }
+
+  .accordion {
+    display: none;
+  }
+
+  .accordion-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+  }
+
+  .panel h4, p {
+    padding: 0px 40px;
+  }
+
+  /* Style the buttons that are used to open and close the accordion panel */
+  button.tablink-mobile {
+      background-color: #eee;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: 0.4s;
+  }
+
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  button.tablink-mobile.active, button.tablink-mobile:hover {
+      background-color: #ddd;
+  }
+
+  /* Style the accordion panel. Note: hidden by default */
+  article.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  button.tablink-mobile:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+
+  button.tablink-mobile.active:after {
+      content: "\2796";
+  }
 }

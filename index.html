@@ -1,102 +1,193 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=true;" />
-    <link rel="stylesheet" type="text/css" href="normalize.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pattrn Party</title>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet'>
+    <link rel='stylesheet' type='text/css' href='styles.css'>
   </head>
   <body>
     <header>
-      <h1>PATTRN <span>PARTY</span></h1>
-      <h2>Jack Bevis</h2>
+      <h1>Pattrn <span class='title-blue'>Party</span></h1>
+      <h2 class='student-name'>Jack Bevis</h2>
     </header>
-    <section class="main-content">
 
-      <section class="accordion">
+    <section id='accordion-tabs' class='feature'>
+      <article class='section-header'>
         <h3>Accordion Tabs</h3>
-        <section class="tab">
-          <button class="tablinks" onclick="openTab(event, 'one')">Tab 1</button>
-          <button class="tablinks" onclick="openTab(event, 'two')">Tab 2</button>
-          <button class="tablinks" onclick="openTab(event, 'three')">Tab 3</button>
-          <button class="tablinks" onclick="openTab(event, 'four')">Tab 4</button>
-        </section>
+        <div class='title-line'></div>
+      </article>
 
-        <article id="one" class="tabcontent">
-          <img src="images/placeholder-dt.png" />
-          <div class="text">
-            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing.</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas efficitur vehicula lectus, et maximus felis maximus nec. Mauris dictum mauris sagittis metus gravida lacinia. Aenean laoreet metus nisl. Vivamus et sapien malesuada, semper eros at, viverra est. Aenean euismod sapien id leo volutpat condimentum. Quisque leo tellus, accumsan sit amet nisi at, sollicitudin sagittis mauris. Duis cursus aliquam leo in rutrum. Mauris volutpat mi ut tellus aliquet, sit amet semper dolor semper. Sed eleifend porttitor nulla. Maecenas at velit in dolor condimentum vulputate at nec diam.</p>
-          </div>
+      <article class='tab-area'>
+        <article class='tabs'>
+          <button id='tab1' class='tab1 tablinks isActive'>Tab 1</button>
+          <button id='tab2' class='tab2 tablinks'>Tab 2</button>
+          <button id='tab3' class='tab3 tablinks'>Tab 3</button>
+          <button id='tab4' class='tab4 tablinks'>Tab 4</button>
         </article>
 
-        <article id="two" class="tabcontent">
-          <img src="images/placeholder-dt.png" />
-          <div class="text">
-            <h4>Lorem ipsum dolor sit amet, consectetur.</h4>
-            <p>Ac nulla et integer tristique vitae, sapien ultrices nunc turpis ornare ornare sem. Duis turpis nullam montes bibendum quam platea, sapien vehicula sagittis, in tellus vestibulum eos, vel vel consequat integer vivamus malesuada nec. Facilisi nisl purus, et id leo nec turpis mollis ipsum.</p>
-          </div>
+        <div class='accordion-tab tab1 isActive'>
+          <p class='accordion-tab-title'>Tab 1</p>
+          <p class='tab1-status'>-<p>
+        </div>
+        <article id='tab1-content' class='tab-content'>
+          <div class='tab-image'>Placeholder</div>
+          <article class='tab-text'>
+            <h4>Spicy jalapeno bacon ipsum dolor</h4>
+            <p>Ut boudin chuck occaecat, alcatra anim jerky nisi prosciutto pork belly elit dolore reprehenderit do et.</p>
+            <p>Consequat lorem est kielbasa sint ball tip frankfurter pork loin. Proident alcatra ut veniam sint boudin. Labore drumstick eu consequat, ea ut short ribs alcatra pastrami brisket tongue proident qui andouille.</p>
+          </article>
         </article>
 
-        <article id="three" class="tabcontent">
-          <img src="images/placeholder-dt.png" />
-          <div class="text">
-            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-            <p>Laoreet egestas, congue etiam donec, vitae phasellus posuere hendrerit torquent sodales, adipiscing vestibulum mus sem varius, amet vulputate quos ultricies nulla amet.</p>
-          </div>
+        <div class='accordion-tab tab2'>
+          <p class='accordion-tab-title'>Tab 2</p>
+          <p class='tab2-status'>+<p>
+        </div>
+        <article id='tab2-content' class='tab-content hidden'>
+          <div class='tab-image'>Placeholder</div>
+          <article class='tab-text'>
+            <h4>Bacon ipsum dolor amet alcatra</h4>
+            <p>
+              Kevin ham hock ball tip, swine pork belly strip steak short ribs boudin turducken chuck. Capicola beef pastrami t-bone picanha short loin drumstick pork loin fatback flank.
+            </p>
+            <p>
+              Filet mignon ham sirloin eu jowl reprehenderit ea leberkas tail nulla veniam ut.
+            </p>
+          </article>
         </article>
 
-        <article id="four" class="tabcontent">
-          <img src="images/placeholder-dt.png" />
-          <div class="text">
-            <h4>Lorem ipsum dolor sit amet, consectetur.</h4>
-            <p>Odio interdum nunc vivamus, senectus non dapibus mattis, ante leo purus penatibus suspendisse, nunc lacinia magnis ligula. Nunc blandit vitae parturient, risus ante, quam ac vehicula ridiculus felis fames nec, auctor magna et lectus ipsum, enim tristique in tortor pede voluptates inceptos. Nam proin lacus aliquet vestibulum quis, faucibus est et pede.</p>
-          </div>
+        <div class='accordion-tab tab3'>
+          <p class='accordion-tab-title'>Tab 3</p>
+          <p class='tab3-status'>+<p>
+        </div>
+        <article id='tab3-content' class='tab-content hidden'>
+          <div class='tab-image'>Placeholder</div>
+          <article class='tab-text'>
+            <h4>Kielbasa ipsum turkey ball tip id ut.</h4>
+            <p>
+              Esse qui hamburger leberkas dolor in short loin mollit nisi ut. Kevin minim turducken ham pariatur, ribeye ullamco proident.
+            </p>
+            <p>
+               Sint aliquip tail ad, veniam consequat salami excepteur tempor pig sunt. Fatback eu nisi irure sed. Kielbasa ipsum turkey ball tip id ut.
+            </p>
+          </article>
         </article>
 
-        <a href='https://codepen.io/bevis1308/pen/MoZEJg' target='_blank'><button class='view-code'>View Code</button></a>
-
-        </section>
-      </section>
-
-      <section class="accordion-mobile">
-        <h3>Accordion Tabs</h3>
-        <button class="tablink-mobile">Tab 1</button>
-        <article class="panel">
-          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing.</h4>
-          <img src="images/placeholder-300x150.png" />
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas efficitur vehicula lectus, et maximus felis maximus nec. Mauris dictum mauris sagittis metus gravida lacinia. Aenean laoreet metus nisl. Vivamus et sapien malesuada, semper eros at, viverra est. Aenean euismod sapien id leo volutpat condimentum. Quisque leo tellus, accumsan sit amet nisi at, sollicitudin sagittis mauris semper.</p>
+        <div class='accordion-tab tab4'>
+          <p class='accordion-tab-title'>Tab 4</p>
+          <p class='tab4-status'>+<p>
+        </div>
+        <article id='tab4-content' class='tab-content hidden'>
+          <div class='tab-image'>Placeholder</div>
+          <article class='tab-text'>
+            <h4>Consectetur velit corned beef tongue.</h4>
+            <p>
+              Burgdoggen qui doner mollit bacon deserunt fatback aliquip leberkas hamburger tenderloin. Esse qui hamburger leberkas dolor in short loin mollit nisi ut. Kevin minim turducken ham pariatur.
+            </p>
+            <p>
+              Ex sausage kielbasa biltong ut salami turducken bresaola shoulder sed reprehenderit.
+            </p>
+          </article>
         </article>
 
-        <button class="tablink-mobile">Tab 2</button>
-        <article class="panel">
-          <h4>Lorem ipsum dolor sit amet, consectetur.</h4>
-          <img src="images/placeholder-300x150.png" />
-          <p>Ac nulla et integer tristique vitae, sapien ultrices nunc turpis ornare ornare sem. Duis turpis nullam montes bibendum quam platea, sapien vehicula sagittis, in tellus vestibulum eos, vel vel consequat integer vivamus malesuada nec. Facilisi nisl purus, et id leo nec turpis mollis ipsum.</p>
-        </article>
+      </article>
 
-        <button class="tablink-mobile">Tab 3</button>
-        <article class="panel">
-          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-          <img src="images/placeholder-300x150.png" />
-          <p>Laoreet egestas, congue etiam donec, vitae phasellus posuere hendrerit torquent sodales, adipiscing vestibulum mus sem varius, amet vulputate quos ultricies nulla amet.</p>
-        </article>
-
-        <button class="tablink-mobile">Tab 4</button>
-        <article class="panel">
-          <h4>Lorem ipsum dolor sit amet, consectetur.</h4>
-          <img src="images/placeholder-300x150.png" />
-          <p>Odio interdum nunc vivamus, senectus non dapibus mattis, ante leo purus penatibus suspendisse, nunc lacinia magnis ligula. Nunc blandit vitae parturient, risus ante, quam ac vehicula ridiculus felis fames nec, auctor magna et lectus ipsum, enim tristique in tortor pede voluptates inceptos. Nam proin lacus aliquet vestibulum quis, faucibus est et pede.</p>
-        </article>
-
-        <a href='https://codepen.io/bevis1308/pen/pwGRBP' target='_blank'><button class='view-code'>View Code</button></a>
-
-        </section>
-      </section>
+      <a href='https://codepen.io/bevis1308/pen/MoZEJg'>View code</a>
     </section>
 
-  <script src="script.js"></script>
+    <section id='flexible-cards' class='feature'>
+      <article class='section-header'>
+        <h3>Flexible Cards</h3>
+        <div class='title-line'></div>
+      </article>
+
+      <article class='flex-cards-area'>
+        <article class='card card1'>
+          <article class='card-title'>
+            <h4>As, blind and deaf, the whale plunged</h4>
+          </article>
+          <div class='card-image'></div>
+        </article>
+
+        <article class='card'>
+          <article class='card-title'>
+            <h4>Forward, as if by</h4>
+          </article>
+          <div class='card-image'></div>
+        </article>
+
+        <article class='card'>
+          <article class='card-title'>
+            <h4>Sheer power of speed</h4>
+          </article>
+          <div class='card-image'></div>
+        </article>
+
+        <article class='card'>
+          <article class='card-title'>
+            <h4>To rid himself of</h4>
+          </article>
+          <div class='card-image'></div>
+        </article>
+
+        <article class='card'>
+          <article class='card-title'>
+            <h4>The iron leech that had fastened to him</h4>
+          </article>
+          <div class='card-image'></div>
+        </article>
+
+        <article class='card'>
+          <article class='card-title'>
+            <h4>As we thus tore</h4>
+          </article>
+          <div class='card-image'></div>
+        </article>
+
+        <article class='card card7'>
+          <article class='card-title'>
+            <h4>A white gash in the sea</h4>
+          </article>
+          <div class='card-image'></div>
+        </article>
+
+      </article>
+
+      <a href='https://codepen.io/bevis1308/pen/XgLOWa?editors=1100'>View code</a>
+
+    </section>
+
+    <section id='header-bar' class='feature'>
+      <article class='section-header'>
+        <h3>Header Bar</h3>
+        <div class='title-line'></div>
+      </article>
+
+      <article class='header-bar-area'>
+        <article class='bar'>
+          <div class='menu-top'>
+            <div class='circle'>Placeholder</div>
+            <p class='hidden-menu'>MENU</p>
+          </div>
+          <div class='link-container show'>
+            <p class='nav-link'>Navigation Link 1</p>
+            <p class='nav-link'>Navigation Link 2</p>
+            <p class='nav-link'>Navigation Link 3</p>
+          </div>
+          <div class='search-container show'>
+            <img class='search-image' src='images/search.svg' alt-text='search icon' />
+            <input id='search' type='text' placeholder='Search'></input>
+          </div>
+        </article>
+      </article>
+
+      <a href='https://codepen.io/bevis1308/pen/jLNXrv'>View code</a>
+
+    </section>
+
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='index.js'></script>
   </body>
 </html>

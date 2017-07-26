@@ -16,7 +16,7 @@ const tab3Status = $('.tab3-status');
 const tab4Status = $('.tab4-status');
 const statusArray = [tab1Status, tab2Status, tab3Status, tab4Status];
 
-const bar = $('.bar');
+const bar = $('.menu-top');
 const links = $('.link-container');
 const search = $('.search-container');
 

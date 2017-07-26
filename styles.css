@@ -13,7 +13,7 @@ h1 {
   color: #F2F2F2;
 }
 
-.title-blue {
+span {
   color: #34D1D1;
 }
 
@@ -44,7 +44,6 @@ p {
   margin-top: 0;
 }
 
-/*HEADER*/
 header {
   display: flex;
   align-items: center;
@@ -66,7 +65,6 @@ header {
   flex-grow: 2;
 }
 
-/*TABS*/
 .tab-area {
   width: 90%;
   margin: 30px auto;
@@ -129,7 +127,6 @@ header {
 }
 
 
-/*FLEXIBLE CARDS*/
 .flex-cards-area {
   display: grid;
   grid-template-columns: repeat(3, 30%);
@@ -166,9 +163,12 @@ header {
   border-top: 1px solid #D1D2D3;
   background: #F2F2F2;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
 }
 
-/*HEADER BAR*/
 .header-bar-area {
   width: 90%;
   margin: 30px auto;
@@ -242,7 +242,6 @@ header {
 }
 
 
-/*GLOBAL*/
 a {
   display: block;
   width: 300px;
@@ -273,9 +272,7 @@ a:hover {
   display: flex;
 }
 
-/*MEDIA BREAKS*/
 @media screen and (max-width: 1020px) {
-  /*ACCORDION*/
   .tabs {
     display: none;
     box-sizing: border-box;
@@ -336,7 +333,6 @@ a:hover {
     padding: 0 30px;
   }
 
-  /*CARD*/
   .flex-cards-area {
     display: flex;
     flex-direction: column;
@@ -346,7 +342,6 @@ a:hover {
     margin-bottom: 20px
   }
 
-  /*HEADER*/
   .bar {
     flex-direction: column;
     padding: 0;

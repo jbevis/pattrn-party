@@ -1,8 +1,5 @@
 body {
   margin: 0 0 50px 0;
-}
-
-h1, h2, h3, h4, button, input, p, a, div {
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -273,6 +270,7 @@ a:hover {
 }
 
 @media screen and (max-width: 1020px) {
+  
   .tabs {
     display: none;
     box-sizing: border-box;
@@ -282,7 +280,7 @@ a:hover {
   .accordion-tab {
     font-family: 'Open Sans', sans-serif;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     background: #F2F2F2;
     border: 1px solid #ffffff;
@@ -384,6 +382,7 @@ a:hover {
 }
 
 @media screen and (max-width: 750px) {
+  
   .tab-area,
   .flex-cards-area,
   .header-bar-area {

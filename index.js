@@ -61,10 +61,6 @@ const toggleShow = (links, search) => {
   }
 };
 
-bar.on('click', () => {
-  toggleShow(links, search);
-});
-
 tab1.on('click', () => {
   toggleTab(tab1, tabsArray);
   toggleContent(tab1Content, contentArray);
@@ -89,3 +85,6 @@ tab4.on('click', () => {
   toggleStatus(tab4Status, statusArray)
 });
 
+bar.on('click', () => {
+  toggleShow(links, search);
+});
